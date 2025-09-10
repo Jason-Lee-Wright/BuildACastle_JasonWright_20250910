@@ -12,12 +12,14 @@ public class CameraMovement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             CamRotation();
         }
         
         else
         {
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
